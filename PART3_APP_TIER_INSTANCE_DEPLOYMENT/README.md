@@ -58,3 +58,26 @@ SELECT * FROM transactions;
 ```
 When finished, just type exit and hit enter to exit the MySQL client.
 
+## Test App Tier
+Now let's run a couple tests to see if our app is configured correctly and can retrieve data from the database.
+
+To hit out health check endpoint, copy this command into your SSM terminal. This is our simple health check endpoint that tells us if the app is simply running.
+```
+curl http://localhost:4000/health
+```
+The response should looks like the following:
+```
+"This is the health check"
+```
+Next, test your database connection. You can do that by hitting the following endpoint locally:
+```
+curl http://localhost:4000/transaction
+```
+You should see a response containing the test data we added earlier:
+```
+{"result":[{"id":1,"amount":400,"description":"groceries"},{"id":2,"amount":100,"description":"class"},{"id":3,"amount":200,"description":"other groceries"},{"id":4,"amount":10,"description":"brownies"}]}
+```
+If you see both of these responses, then your networking, security, database and app configurations are correct.
+
+Congrats! Your app layer is fully configured and ready to go.
+
