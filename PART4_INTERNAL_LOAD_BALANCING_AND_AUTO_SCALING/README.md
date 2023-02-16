@@ -13,3 +13,12 @@ Deploy Internal Load Balancer
 
 
 ![This is an image](https://github.com/GAUTAMSETHI123/AWS_Multi_tier_Architecture/blob/main/assests/images/PART3/CreateAMI1.png)
+
+2. Give the image a name and description and then click Create image. This will take a few minutes, but if you want to monitor the status of image creation you can see it by clicking AMIs under Images on the left hand navigation panel of the EC2 dashboard.
+
+
+![This is an image](https://github.com/GAUTAMSETHI123/AWS_Multi_tier_Architecture/blob/main/assests/images/PART3/CreateAMI2.png)
+
+
+
+
