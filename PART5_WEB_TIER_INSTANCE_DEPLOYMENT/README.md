@@ -47,9 +47,9 @@ npm install
 npm run build
 ```
 NGINX can be used for different use cases like load balancing, content caching etc, but we will be using it as a web server that we will configure to serve our application on port 80, as well as help direct our API calls to the internal load balancer.
-
+```
 sudo amazon-linux-extras install nginx1 -y
-
+```
 We will now have to configure NGINX. Navigate to the Nginx configuration file with the following commands and list the files in the directory:
 ```
 cd /etc/nginx
